@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New User</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>Add New User</h2>
+    <form action="add_user.php" method="POST">
+      <label>User ID:</label>
+      <input type="number" name="id" required >
+
+      <label>Name:</label>
+      <input type="text" name="name" required >
+
+      <label>Initial Balance:</label>
+      <input type="number" name="balance" step="0.01" required >
+
+      <button type="submit">Add User</button>
+    </form>
+  </div>
+</body>
+</html>
